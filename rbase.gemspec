@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'rbase'
-  s.version = '0.1.3'
+  s.version = '0.1.4'
   s.summary = 'Library to create/read/write to XBase databases (*.DBF files)'
   s.files = Dir.glob('**/*').delete_if { |item| item.include?('.svn') }
   s.require_path = 'lib'
