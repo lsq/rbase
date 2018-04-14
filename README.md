@@ -4,9 +4,10 @@ rbase-ff
 ChangeLog
 * 2018-04-14 Reading was broken due to relying on offset data in record data, which may be inaccurate.
 * 2018-04-14 No longer necessary to require 'date' separately
-* 2018-04-14 Added [] method to record; you can now do record[:field_name]
-instead of record.field_name
+* 2018-04-14 Added [] method to record; you can now do record[:field_name] instead of record.field_name
 
+
+=======
 
 rbase gem (working with dbf files) for ruby 1.9.3+ (iconv removed, some fixes)
 
