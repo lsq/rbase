@@ -36,7 +36,7 @@ module RBase
   #   puts user.birth_date
   #
   class Record
-    attr_reader :table, :index
+    attr_reader :table, :index, :values_changed
 
     def initialize(table, attributes = {})
       @table = table
@@ -85,7 +85,11 @@ module RBase
       c.instance_variable_set("@data", @data)
       c
     end
-
+    
+    def [](name)
+      get_value(name)
+    end
+    
     def method_missing(sym, *args)
       name = sym.to_s
       if /=$/ =~ name && args.size == 1

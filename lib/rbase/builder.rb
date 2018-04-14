@@ -23,7 +23,7 @@ module RBase
   # For documentation on column parameters see RBase::Schema.column documentation.
   #
   def self.create_table(name, options = {})
-    options[:language] ||= LANGUAGE_RUSSIAN_WINDOWS
+    options[:language] ||= LANGUAGE_US_DOS
     
     schema = Schema.new
     yield schema if block_given?

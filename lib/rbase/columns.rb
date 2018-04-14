@@ -59,7 +59,7 @@ module RBase
       end
 
       def inspect
-        "#{name}(type=#{type}, size=#{size})"
+        "#{name}(type=#{type}, size=#{size}, offset=#{offset})"
       end
       
       protected
