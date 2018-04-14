@@ -1,6 +1,8 @@
 rbase-ff
 ========
 
+ChangeLog
+* 2018-04-14 Reading was broken due to relying on offset data in record data, which may be inaccurate.
 
 rbase gem (working with dbf files) for ruby 1.9.3+ (iconv removed, some fixes)
 
