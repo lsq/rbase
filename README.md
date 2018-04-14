@@ -1,7 +1,10 @@
-rbase
-=====
+rbase-ff
+========
 
-rbase gem (working with dbf files) for ruby 1.9.3 (iconv removed, some fixes)
+
+rbase gem (working with dbf files) for ruby 1.9.3+ (iconv removed, some fixes)
+
+I have copied this gem, made some minor changes, and pushed it to rubygems for public installation.  There are many forks of this on github, but no one has bothered to push it to rubygems that I can find.  This version is found on rubygems.org as rbase-ff.  I will continue to maintain this version and keep the rubygems version updated from here.  -- Tom L.
 
 How to use
 ==========
