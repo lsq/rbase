@@ -196,10 +196,8 @@ module RBase
       while true do
         offset += size
         column_data = @file.read(32)
-        puts ">>#{column_data}<<"
         break if column_data[0, 1] == "\x0d"
         name, type, junk, size, decimal = *column_data.unpack('@0a11aLCC')
-        puts "name #{name}, offset #{offset}"
         name = name.strip
         @columns << Columns::Column.column_for(type).new(name, options.merge(:offset => offset, :size => size, :decimal => decimal))
         @name_to_columns[name.upcase.to_sym] = @columns.last

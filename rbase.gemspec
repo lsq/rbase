@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'rbase-ff'
-  s.version = '0.9.1'
+  s.version = '0.9.3'
   s.summary = 'Library to create/read/write to XBase databases (*.DBF files)'
   s.require_path = 'lib'
   s.files = Dir.glob('**/*').delete_if { |item| item =~ /^\./ }
